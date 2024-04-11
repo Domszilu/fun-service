@@ -1,0 +1,62 @@
+#offers {
+    @include sectionStyle;
+    height     : auto;
+    align-items: center;
+    background : linear-gradient(0deg, white 30%, #810000 100%);
+
+    h2 {
+        @include h2Style;
+    }
+
+    .offersContainer {
+        .offer {
+            border-radius   : 1rem;
+            background-color: $secondary-color;
+            width           : 39rem;
+            height          : 50rem;
+            padding         : 4rem;
+            margin          : 2rem;
+            display         : flex;
+            flex-direction  : column;
+            align-items     : center;
+            justify-content : space-between;
+            box-shadow      : rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            .offerTextContainer {
+                h3 {
+                    font-size: 2.2rem;
+                    margin   : 2rem 0;
+                    padding  : 1rem 0;
+                    font-family: "Roboto",
+                        sans-serif;
+                    text-transform: uppercase;
+                    text-align    : center;
+                }
+
+                p {
+                    padding: 1rem 0;
+                    font-family: "Roboto",
+                        sans-serif;
+                    font-size  : 1.5rem;
+                    text-align : justify;
+                    line-height: 1.5;
+                }
+            }
+
+            button {
+                @include buttonStyle;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #offers {
+        .offersContainer {
+            display        : flex;
+            flex-wrap      : wrap;
+            justify-content: space-around;
+            align-items    : center;
+        }
+    }
+}

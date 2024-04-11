@@ -1,0 +1,49 @@
+#how {
+    @include sectionStyle;
+    align-items: center;
+    background : linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #810000 100%);
+
+    h2 {
+        @include h2Style;
+        text-align: center;
+    }
+
+    .howContainer {
+        width          : 85%;
+        display        : flex;
+        justify-content: space-around;
+
+        .how {
+            padding: 2rem;
+
+            h3 {
+                @include h3Style;
+                text-align    : center;
+                padding-bottom: 2rem
+            }
+
+            li {
+                @include pStyle;
+                text-align     : start;
+                padding-left   : 2rem;
+                padding-bottom : 1rem;
+                list-style-type: none;
+            }
+
+            i {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #how {
+        height: 200vh;
+
+        .howContainer {
+            flex-direction: column;
+        }
+    }
+
+}

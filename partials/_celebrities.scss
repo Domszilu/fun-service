@@ -1,0 +1,61 @@
+#celebrities {
+    background-color: #810000;
+    @include sectionStyle;
+    height: auto;
+
+    h2 {
+        @include h2Style;
+        color     : $secondary-color;
+        text-align: center;
+    }
+
+    .celebContainer {
+        display       : flex;
+        flex-direction: column;
+
+        .celeb {
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+            padding        : 2rem;
+
+
+            &:hover img {
+                transform    : scale(1.05);
+                border-radius: 30%;
+            }
+
+            img {
+                border             : 0.7rem solid $secondary-color;
+                border-radius      : 50%;
+                height             : 239px;
+                width              : 239px;
+                transition-duration: 0.5s;
+
+
+            }
+
+            h3 {
+                font-family: "Allura",
+                    cursive;
+                font-size: 2.5rem;
+                padding  : 1.5rem;
+                color    : $secondary-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:426px) {
+    #celebrities {
+        height: auto;
+
+        .celebContainer {
+            flex-direction : row;
+            flex-wrap      : wrap;
+            justify-content: space-around;
+            align-items    : center;
+        }
+    }
+}

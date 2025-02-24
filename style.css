@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 body {
@@ -229,7 +230,7 @@ header .header-container span {
 
 #about {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: #EEEBDD;
   padding: 2rem;
   display: flex;
@@ -315,6 +316,7 @@ header .header-container span {
   flex-direction: column;
   justify-content: center;
   height: auto;
+  width: 100vw;
 }
 #celebrities h2 {
   font-family: "Staatliches", sans-serif;
@@ -342,8 +344,9 @@ header .header-container span {
 #celebrities .celebContainer .celeb img {
   border: 0.7rem solid #EEEBDD;
   border-radius: 50%;
-  height: 239px;
-  width: 239px;
+  max-height: 239px;
+  max-width: 239px;
+  aspect-ratio: 1/1;
   transition-duration: 0.5s;
 }
 #celebrities .celebContainer .celeb h3 {
@@ -383,7 +386,8 @@ header .header-container span {
 #offers .offersContainer .offer {
   border-radius: 1rem;
   background-color: #EEEBDD;
-  width: 39rem;
+  width: 90vw;
+  max-width: 39rem;
   height: 50rem;
   padding: 4rem;
   margin: 2rem;
@@ -477,6 +481,7 @@ header .header-container span {
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, #a10f0f 100%);
+  width: 100%;
 }
 #contact h2 {
   font-family: "Staatliches", sans-serif;
@@ -485,11 +490,12 @@ header .header-container span {
   letter-spacing: 7px;
 }
 #contact form {
-  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 39rem;
 }
 #contact form button {
   margin: 1rem 0;
@@ -508,6 +514,9 @@ header .header-container span {
   letter-spacing: 1px;
   border: 3px solid rgb(37, 36, 36);
 }
+#contact form .formGroup {
+  width: 100%;
+}
 #contact form .formGroup label {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -517,8 +526,8 @@ header .header-container span {
   margin-bottom: 0.5rem;
 }
 #contact form .formGroup input {
+  width: 100%;
   display: block;
-  width: 30rem;
   height: 2.5rem;
   margin-bottom: 1.5rem;
   background-color: #EEEBDD;
@@ -531,8 +540,8 @@ header .header-container span {
   color: transparent;
 }
 #contact form .formGroup textarea {
+  width: 100%;
   display: block;
-  width: 30rem;
   resize: none;
   background-color: #EEEBDD;
   border: 0;

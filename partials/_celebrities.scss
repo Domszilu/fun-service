@@ -2,6 +2,7 @@
     background-color: #810000;
     @include sectionStyle;
     height: auto;
+    width : 100vw;
 
     h2 {
         @include h2Style;
@@ -29,8 +30,9 @@
             img {
                 border             : 0.7rem solid $secondary-color;
                 border-radius      : 50%;
-                height             : 239px;
-                width              : 239px;
+                max-height         : 239px;
+                max-width          : 239px;
+                aspect-ratio       : 1/1;
                 transition-duration: 0.5s;
 
 

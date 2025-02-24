@@ -2,17 +2,19 @@
     @include sectionStyle;
     align-items: center;
     background : linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, $darker-primary-color 100%);
+    width      : 100%;
 
     h2 {
         @include h2Style;
     }
 
     form {
-        padding        : 5rem;
         display        : flex;
         flex-direction : column;
         justify-content: center;
         align-items    : center;
+        width          : 100%;
+        max-width      : 39rem;
 
         button {
             @include buttonStyle;
@@ -28,6 +30,7 @@
         }
 
         .formGroup {
+            width: 100%;
 
             label {
                 font-family: "Roboto",
@@ -40,8 +43,8 @@
             }
 
             input {
+                width           : 100%;
                 display         : block;
-                width           : 30rem;
                 height          : 2.5rem;
                 margin-bottom   : 1.5rem;
                 background-color: $secondary-color;
@@ -53,8 +56,8 @@
             }
 
             textarea {
+                width           : 100%;
                 display         : block;
-                width           : 30rem;
                 resize          : none;
                 background-color: $secondary-color;
                 border          : 0;

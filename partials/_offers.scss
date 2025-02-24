@@ -9,10 +9,12 @@
     }
 
     .offersContainer {
+
         .offer {
             border-radius   : 1rem;
             background-color: $secondary-color;
-            width           : 39rem;
+            width           : 90vw;
+            max-width       : 39rem;
             height          : 50rem;
             padding         : 4rem;
             margin          : 2rem;
